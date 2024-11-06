@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do</title>
 </head>
+
 <body>
-email:<input type="email" id="e1"><br>
-password:<input type="password" id="p1"><br>
-Age:<input type="number" id="a1"><br>
-<button onclick="Submit()">
-    login
-</button>
-<p id="pp1">
+    email:<input type="email" id="e1"><br>
+    password:<input type="password" id="p1"><br>
+    Age:<input type="number" id="a1"><br>
+    <button onclick="Submit()">
+        login
+    </button>
+    <p id="pp1">
 
-</p>
-<script>
-function Submit(){
-var e=document.getElementById("e1").value   
-var p=document.getElementById("p1").value   
-var a=document.getElementById("a1").value   
-var msg=document.getElementById("pp1")
-var m=""
-if (e=="")
-{
- m=
-    
-}
+    </p>
+    <script>
+        function Submit() {
+            var e = document.getElementById("e1").value
+            var p = document.getElementById("p1").value
+            var a = document.getElementById("a1").value
+            var msg = document.getElementById("pp1")
+            var m = ""
+            if (e == "")  || (p == "") || (a == "")
+            {
+                m = "all the fills are mandtory to fill here"
+            }
+  
+         else if  (p.length < 8) {
+                m = "pasword must have atleast 8 charecters"
+            }
 
 
 
 
 
-}
-</script>
+
+
+        }
+    </script>
 </body>
+
 </html>

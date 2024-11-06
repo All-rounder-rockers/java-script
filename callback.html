@@ -10,13 +10,13 @@
 <body>
     <script>
 
-        function Age(callback) {
-                            document.write("this my Age(10)"+"<br>")
-                            callback()
-        }
-        function name() {
-            document.write("my name Ak")
+        function Age() {
+            document.write("this my Age(10)" + "<br>")
 
+        }
+        function name(Callback) {
+            document.write("my name Ak"+"<br>")
+            Callback()
         }
         name(Age)
     </script>
