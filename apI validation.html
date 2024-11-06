@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p>
+enter a number and click okay .
+    </p>
+    <input id="in1" type="number" min="1" max="7" required> 
+    <button onclick="btn1() ">
+okay
+
+    </button>
+
+      <p>if the number is  less than 1more than 7 it will show an error message </p>
+        
+        
+        <p id ="result"></p>
+
+  <script>
+function btn1(){
+ var a=document.getElementById("in1");
+ if (!a.checkValidity())
+ {
+    document.getElementById("result").innerHTML=a.validationMessage;  
+ }
+ else {
+    document.getElementById("result").innerHTML="input is okay";
+ }
+}
+  </script>  
+ </body>
+ </html>
